@@ -8,12 +8,11 @@ terraform {
 }
 
 provider "aws" {
-    region = "ap-south-1"
+    region = var.region
 }
 resource "aws_instance" "tf-ec2-1" {
-    count = 2
-    ami = "ami-02d26659fd82cf299"
-    instance_type =  "t2.micro"
+    ami = "ami-0bd4cda58efa33d23"
+    instance_type =  "t3.micro"
     tags = {
         Name = "Terraform-EC2-Instance-1"
     }
