@@ -1,5 +1,4 @@
 .env
-# Terraform
 **/.terraform/
 **/*.tfstate
 **/*.tfstate.backup
