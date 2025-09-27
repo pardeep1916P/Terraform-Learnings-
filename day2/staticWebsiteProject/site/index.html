@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terraform Static Site Demo</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 1100px; /* Limits image width on large screens */
+      margin-top: 40px;  /* Space at the top */
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .caption {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 12px;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 0 0 12px 12px;
+      position: relative;
+      top: -6px;
+    }
+
+    .info-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 26px;
+      cursor: pointer;
+      color: #0ff;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      padding: 6px 12px;
+      transition: 0.3s;
+    }
+
+    .info-icon:hover {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .caption {
+        font-size: 16px;
+        padding: 10px;
+      }
+      .info-icon {
+        font-size: 22px;
+        padding: 5px 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Uploaded Image -->
+    <img src="photo.png" alt="Terraform Demo Image">
+
+    <!-- Info Icon -->
+    <div class="info-icon" onclick="showInfo()">ℹ️</div>
+
+    <!-- Caption -->
+    <div class="caption">Justice, reborn in darkness — Black Goku</div>
+  </div>
+
+  <script>
+    function showInfo() {
+      alert("This is a static site for demo Terraform hands-on practice.");
+    }
+  </script>
+</body>
+</html>
