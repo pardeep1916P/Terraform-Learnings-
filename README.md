@@ -1,4 +1,4 @@
-# Terraform-Learnings-
-day01=> EC2 instance launch
-day02=> create an S3 and a static site using S3
-day03=> configure a private vpc and launch an EC2 instance in private vpc
+# Terraform Learnings
+- **Day 01** → EC2 instance launch  
+- **Day 02** → Create an S3 bucket and host a static site using S3  
+- **Day 03** → Configure a private VPC and launch an EC2 instance in the private VPC  
