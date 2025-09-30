@@ -1,0 +1,14 @@
+                        default values
+                            ↓
+                environment variables (TF_VAR_name)
+                            ↓
+                      terraform.tfvars
+                            ↓
+                    terraform.tfvars.json
+                            ↓
+        *.auto.tfvars / *.auto.tfvars.json (lexical order)
+                            ↓
+                CLI -var-file (in order given)
+                            ↓
+                CLI -var (highest precedence)
+                                             

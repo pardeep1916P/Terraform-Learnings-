@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket = "chinnu-aws-s3-demo"
-    key    = "terraform/state_files/ec2_in_existinVpc.tfstate"
+    key    = "terraform/state_files/variables.tfstate"
     region = "ap-south-2"
   }
 }
