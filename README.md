@@ -5,3 +5,4 @@
 - **Day 04** → configure a ec2 instance in a private vpc with nginx+http access and terraform datasources usage
 - **Day 05** → terraform datasources dynamic usage and types of variables,validations
 - **Day 06** → terraform operators,expressions,loops,locals, and usage of -out in commands
+- **Day 07** → terraform functions and modules
