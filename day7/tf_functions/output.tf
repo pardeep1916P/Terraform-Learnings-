@@ -37,3 +37,13 @@ output "max_element" {
 output "absolute_value" {
   value = abs(-45)
 }
+
+#list contains name
+output "contains_name_ahad" {
+  value = contains(var.string_list, "ahad")
+}
+
+#contains value
+output "contains_value_78" {
+  value = contains(var.nums_list, 78)
+}
