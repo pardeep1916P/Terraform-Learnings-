@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket = "chinnu-aws-s3-demo"
-    key    = "terraform/state_files/mult_vpc.tfstate"
+    key    = "terraform/state_files/mult_subnet_normal.tfstate"
     region = "ap-south-2"
   }
 }
