@@ -13,5 +13,5 @@ resource "aws_subnet" "my_subnet" {
   tags = {
     Name = "tf_subnet"
   }
-
 }
+
