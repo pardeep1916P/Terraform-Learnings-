@@ -8,10 +8,10 @@ resource "aws_vpc" "my-vpc" {
 
 #create two subnets with one block
 resource "aws_subnet" "subnet" {
-  vpc_id = aws_vpc.my-vpc.id
+  vpc_id     = aws_vpc.my-vpc.id
   cidr_block = "10.0.${count.index}.0/24"
-  count =2
+  count      = 2
   tags = {
-    Name = "tf_subnet_0${count.index+1}"
+    Name = "tf_subnet_0${count.index + 1}"
   }
 }

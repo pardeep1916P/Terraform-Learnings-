@@ -1,11 +1,12 @@
-data "aws_subnet" "subnets" {
-    filter {
-        name   = "vpc-id"
-        values = [aws_vpc.my-vpc.id]
-    }
-    filter {
-        name   = "tag:Name"
-        values = ["tf_subnet_*"]
-    }
+data "aws_subnets" "subnets" {
+  depends_on = [aws_subnet.subnet]
+  filter {
+    name   = "vpc-id"
+    values = [aws_vpc.my-vpc.id]
+  }
+  filter {
+    name   = "tag:Name"
+    values = ["tf_subnet_*"]
+  }
 
 }
