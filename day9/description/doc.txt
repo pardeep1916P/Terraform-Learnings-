@@ -1,1 +1,30 @@
-to create 2 subnets and 4 ec2 instances , two instance with one subnet each
+# Day 9: Multiple EC2 Instances with Subnets
+
+## Objective
+Create a Terraform configuration that provisions:
+- **2 Subnets** in different Availability Zones
+- **4 EC2 Instances** distributed across the subnets (2 instances per subnet)
+
+## Architecture Overview
+```
+VPC
+├── Subnet 1 (AZ-a)
+│   ├── EC2 Instance 1
+│   └── EC2 Instance 2
+└── Subnet 2 (AZ-b)
+    ├── EC2 Instance 3
+    └── EC2 Instance 4
+```
+
+## Resources to be Created
+1. **VPC** - Virtual Private Cloud to host all resources
+2. **2 Subnets** - One in each availability zone for high availability
+3. **4 EC2 Instances** - Evenly distributed (2 instances per subnet)
+4. **Internet Gateway** - For internet access (if public subnets)
+5. **Security Groups** - To control traffic to EC2 instances
+
+## Distribution Strategy
+- **Subnet 1**: 2 EC2 instances
+- **Subnet 2**: 2 EC2 instances
+- Each subnet in a different Availability Zone for fault tolerance
+
