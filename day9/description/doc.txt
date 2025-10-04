@@ -1,0 +1,1 @@
+to create 2 subnets and 4 ec2 instances , two instance with one subnet each
