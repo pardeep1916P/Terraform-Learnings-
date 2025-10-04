@@ -28,3 +28,8 @@ VPC
 - **Subnet 2**: 2 EC2 instances
 - Each subnet in a different Availability Zone for fault tolerance
 
+## Expected Outputs
+- Subnet IDs
+- Instance IDs
+- Instance-to-subnet mapping
+- Public/Private IPs (depending on subnet type)
