@@ -7,4 +7,4 @@
 - **Day 06** → terraform operators,expressions,loops,locals, and usage of -out in commands
 - **Day 07** → terraform functions and modules
 - **Day 08** → creating two subnets normally (two seperate blocks) and using count efficiently (single block)
-- **Day 09** → launch 4 ec2 instances and two subnets (one subnet for two instances each) 
+- **Day 09** → launch 4 ec2 instances and two subnets (one subnet for two instances each)
