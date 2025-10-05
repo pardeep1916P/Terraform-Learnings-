@@ -1,4 +1,4 @@
-#create 2 ec2 instance using list(object)
+#create two ec2 instance using list(object)
 resource "aws_instance" "my_ec2" {
   depends_on    = [aws_subnet.subnet]
   count         = length(var.ec2_list_config)
