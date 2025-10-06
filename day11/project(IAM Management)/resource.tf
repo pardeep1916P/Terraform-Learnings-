@@ -21,13 +21,6 @@ resource "aws_iam_user_login_profile" "profile" {
   }
 }
 
-#attach policies to user
-resource "aws_iam_user_policy_attachment" "user_policy" {
-  depends_on = [aws_iam_user.users]
-  for_each   = { for pair in local.user_role_pair : "${pair.username}-${pair.role}" => pair }
-  user       = aws_iam_user.users[each.value.username].name
-  policy_arn   = "arn:aws:iam::aws:policy/${each.value.role}"
 
-}
 
 
