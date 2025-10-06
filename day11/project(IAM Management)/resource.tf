@@ -12,6 +12,7 @@ resource "aws_iam_user_login_profile" "profile" {
   user                    = each.value.name
   password_length         = 12
   password_reset_required = true
+  #to avoid unwanted destroies when changes made
   lifecycle {
     ignore_changes = [
       password_length,
