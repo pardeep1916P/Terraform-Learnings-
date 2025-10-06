@@ -1,3 +1,4 @@
+#aws region in variable for reusability
 variable "region" {
   description = "The AWS region to create resources in"
   type        = string
