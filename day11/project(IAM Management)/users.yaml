@@ -1,0 +1,7 @@
+users:
+  - username: chinnu
+    roles: [AdministratorAccess]
+  - username: chaitanya
+    roles: [AmazonS3ReadOnlyAccess]
+  - username: venkata_sai
+    roles: [AmazonEC2ReadOnlyAccess, AmazonS3ReadOnlyAccess]
