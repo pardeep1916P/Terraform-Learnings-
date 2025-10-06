@@ -9,4 +9,4 @@
   - **Day 08** →  creating two subnets normally (two seperate blocks) and using count efficiently (single block)
   - **Day 09** →  launch 4 ec2 instances and two subnets (one subnet for two instances each)
   - **Day 10** →  Create two ec2 instance of different ami id and subnets using list(object) and map(object)
-  - **Day 11** →  A simple aws Identity and Access Management (IAM) project using terraform (IaC)
+  - **Day 11** →  A simple aws Identity and Access Management(IAM) project using terraform (IaC)
