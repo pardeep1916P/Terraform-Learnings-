@@ -5,5 +5,3 @@ users:
     roles: [AmazonS3ReadOnlyAccess]
   - username: venkata_sai
     roles: [AmazonEC2ReadOnlyAccess, AmazonS3ReadOnlyAccess]
-  - username: Goli_prabhas
-    roles: [AmazonDynamoDBReadOnlyAccess]

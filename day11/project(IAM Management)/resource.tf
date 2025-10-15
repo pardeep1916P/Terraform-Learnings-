@@ -11,7 +11,7 @@ resource "aws_iam_user_login_profile" "profile" {
   for_each                = aws_iam_user.users
   user                    = each.value.name
   password_length         = 12
-  password_reset_required = true
+  password_reset_required = true //asks to reset password once the user logged-in
   #to avoid unwanted destroies when changes made
   lifecycle {
     ignore_changes = [
